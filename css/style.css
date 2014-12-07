@@ -167,7 +167,7 @@ h1{
 	background-size: 100% 100%;
 }
 .block3{
-	background: url("block_sv1.png") no-repeat;
+	background: url("block_sv.png") no-repeat;
 	background-size: 100% 100%;
 }
 .block4{
@@ -215,23 +215,69 @@ height: 641px;
 	width: 771px;
 }
 /*&&&&&&&&&&&*/
-.svetlakov_block{
-	background: url("svetlakov.png") no-repeat;
-	position: absolute;
-	background-size: 99%;
-	max-width: 100%;
-height: auto;
-	bottom: 2.8%;
+.svetlakov_block1{
+	background: url("1.png") no-repeat;
+	position: relative;
+	/* background-size: 100% 100%; */
+	width: 695px;
+	height: 656px;
+	/* max-width: 100%; */
+	/* height: auto; */
+	bottom: 182px;
 	left: 7%;
 }
-
-
+.svetlakov_block2{
+	background: url("2.png") no-repeat;
+	position: relative;
+	/* background-size: 100% 100%; */
+	width: 672px;
+	height: 684px;
+	/* max-width: 100%; */
+	/* height: auto; */
+	bottom: 163px;
+	float: right;
+}
+.svetlakov_block3{
+	background: url("3.png") no-repeat;
+	position: relative;
+	/* background-size: 100% 100%; */
+	width: 917px;
+	height: 780px;
+	/* max-width: 100%; */
+	/* height: auto; */
+	bottom: -21px;float: left;
+}
+.svetlakov_block4{
+	background: url("4.png") no-repeat;
+	position: relative;
+	/* background-size: 100% 100%; */
+	width: 378px;
+	height: 780px;
+	/* max-width: 100%; */
+	/* height: auto; */
+	bottom: 182px;
+	/* left: 7%; */
+	float: right;
+}
+.svetlakov_block5{
+	background: url("5.png") no-repeat;
+	position: relative;
+	/* background-size: 100% 100%; */
+	width: 824px;
+	height: 780px;
+	/* max-width: 100%; */
+	/* height: auto; */
+	bottom: 182px;
+	/* left: 7%; */
+	float: left;
+}
 .text_block{
 	display: block;
 	position: relative;
-	width:643px;
+	width: 42%;
+	text-align: center;
 	margin: 0 auto;
-	padding-top: 2em;
+	padding-top: 2em
 }
 .text_block span{
 	font-size: 2.188em;
@@ -267,7 +313,7 @@ height: auto;
 	width: 52%;
 	position: relative;
 	top: 184px;
-	left: 518px;
+	left: 561px;
 }
 .text_block_video h1{
 	font-size: 223%;
@@ -332,7 +378,7 @@ height: auto;
 	width: 58%;
 	position: relative;
 	top: 290px;
-	left: -61px;
+	left: 0px;
 }
 .text_block_celebrity h1{
 	font-size: 270%;
@@ -383,7 +429,7 @@ height: auto;
 	width: 49%;
 	position: relative;
 	top: 252px;
-	left: -43px;
+	left: 0px;
 }
 .text_block_master h1{
 	font-size: 270%;
@@ -409,9 +455,9 @@ height: auto;
 	margin: 0 auto;
 	color: #fff;
 	font-family: "OpenSans";
-	padding-top: 21em;
-	padding-left: 26em;
-	line-height: 47.8px;
+	position: relative;
+	top:0px;
+	left:0px;
 }
 .block_contacts span{
 	font-size:155% ;
