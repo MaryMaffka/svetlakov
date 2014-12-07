@@ -13,20 +13,38 @@
           } 
          </script>
          <link rel="stylesheet" href="css/style.css"  media="all">
-		   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		   <script src="js/jquery-1.10.2.min.js"></script>
 		    <script type="text/javascript" src="js/main.js"></script>
 		    <script type="text/javascript" src="js/jquery.fadethis.js"></script>
+					    <script type="text/javascript" src="js/waypoints.min.js"></script>
+		    <script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
+
 
 		<!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> favicon-->
         <!--<script type="text/javascript" src="">-->
    </head>
  <body> 
+ 	  <div class="layer-sub-navigation">
+		<div class="layer g-clear">
+		  <div class="col">
+		  <div id="logo_bubble"><img src="css/logo_bubble.png"></div>
+			<ul class="navigation sub-navigation navigation_on-page no-visited cols">
+				<li class="col navigation_item"><a class="pseudo" href="#nav-section-2">О ПРОЕКТЕ</a></li>
+					<li class="col navigation_item"><a class="pseudo" href="#nav-section-3">ВИДЕОПОЗДРАВЛЕНИЕ</a></li>
+					<li class="col navigation_item"><a class="pseudo" href="#nav-section-4">CELEBRITY</a></li>
+					<li class="col navigation_item"><a class="pseudo" href="#nav-section-5">SVETLAKOV & CO</a></li>
+					<li class="col navigation_item"><a class="pseudo" href="#nav-section-6">ВЕДУЩИЙ</a></li>
+					<li class="col navigation_item"><a class="pseudo" href="#nav-section-7">КОНТАКТЫ</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
     <div id="nav-section-1" class="wrapper block1">
         <div class="layer layer_header">
             <div id="logo"></div>
         </div>
         <div class="layer">
-          <ul id="menu" class="cols">
+         <ul id="menu" class="cols">
             <li class="col navigation_item"><a href="#nav-section-2">О ПРОЕКТЕ</a></li>
             <li class="col navigation_item"><a href="#nav-section-3">ВИДЕОПОЗДРАВЛЕНИЕ</a></li>
             <li class="col navigation_item"><a href="#nav-section-4">CELEBRITY</a></li>
@@ -35,6 +53,7 @@
             <li class="col navigation_item"><a href="#nav-section-7">КОНТАКТЫ</a></li>
           </ul>
         </div>
+
         <!-- <div class="test">
           <div class="svetlakov_block "></div>
         </div>--> 
@@ -44,7 +63,7 @@
             </div>
          </div> 
     </div>
-   <div id="nav-section-2" class="wrapper block2">
+   <div id="nav-section-2" class="wrapper block2 nav-section">
         <div class="layer">
              <div class="text_block_emotion">
 			 <div class="slide-left">
@@ -56,7 +75,7 @@
             </div>
          </div> 
     </div>
-     <div id="nav-section-3" class="wrapper block3">
+     <div id="nav-section-3" class="wrapper block3 nav-section" >
         <div class="layer">
             <div class="text_block_video">
 				<div class="slide-right">	
@@ -68,7 +87,7 @@
 		   </div>
          </div>
     </div>
-    <div id="nav-section-4" class="wrapper block4">
+    <div id="nav-section-4" class="wrapper block4 nav-section">
         <div class="layer">
             <div class="text_block_celebrity">
 				<div class="slide-left">
@@ -78,7 +97,7 @@
 			</div>
 		</div>
     </div>
-     <div id="nav-section-5" class="wrapper block5">
+     <div id="nav-section-5" class="wrapper block5 nav-section">
         <div class="layer">
             <div class="text_block_sv">
 				<div class="slide-right">	
@@ -88,7 +107,7 @@
 		   </div>
         </div> 
     </div>
-    <div id="nav-section-6" class="wrapper block6">
+    <div id="nav-section-6" class="wrapper block6 nav-section">
         <div class="layer">
             <div class="text_block_master">
 				<div class="slide-left">
@@ -99,7 +118,7 @@
             </div>
         </div>
     </div>
-    <div id="nav-section-7" class="wrapper block7">
+    <div id="nav-section-7" class="wrapper block7 nav-section">
         <div class="layer">
           <div class="block_contacts">
             <span class="block_phone">+7 916 18-000-55</span>
@@ -111,17 +130,6 @@
           </div>
         </div>
     </div>
-	   <div id="menu_top" class="default">
-			<div id="logo_bubble"><img src="css/logo_bubble.png"></div>
-            <ul>
-				<li class="col navigation_item"><a class="pseudo" href="#nav-section-2">О ПРОЕКТЕ</a></li>
-				<li class="col navigation_item"><a class="pseudo" href="#nav-section-3">ВИДЕОПОЗДРАВЛЕНИЕ</a></li>
-				<li class="col navigation_item"><a class="pseudo" href="#nav-section-4">CELEBRITY</a></li>
-				<li class="col navigation_item"><a class="pseudo" href="#nav-section-5">SVETLAKOV & CO</a></li>
-				<li class="col navigation_item"><a class="pseudo" href="#nav-section-6">ВЕДУЩИЙ</a></li>
-				<li class="col navigation_item"><a class="pseudo" href="#nav-section-7">КОНТАКТЫ</a></li>
-            </ul>
-        </div>
 		<script>$(window).fadeThis();</script>
   </body>
 </html>
