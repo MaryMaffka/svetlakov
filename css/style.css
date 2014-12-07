@@ -35,6 +35,11 @@
 	margin: 0;
 	padding:0;
 }
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body{
 	font-family: "roboto_slablight",Arial;
 	font-size: 100%;
@@ -133,7 +138,9 @@ h1{
 }
 .wrapper{
 	width:100%;
-	height: 780px;
+	height: 100%;
+	min-height: 768px;
+	max-height: 800px;
 	min-width: 1280px;
 	max-width: 1980px;
 	position: relative;
@@ -152,22 +159,32 @@ h1{
 /*Block1*/
 .block1{
 	background: url("block_main.png") no-repeat;
-	background-size: 100%;
-	height: 750px;
-	min-width: 1280px;
+	background-size: 100% 100%; 
 }
 
 .block2{
 	background: url("block_emotion.png") no-repeat;
-	background-size: 100%;
-	height: 750px;
-	min-width: 1280px;
+	background-size: 100% 100%;
 }
 .block3{
-	background: url("block_sv.png") no-repeat;
-	background-size: 100%;
-	height: 750px;
-	min-width: 1200px;
+	background: url("block_sv1.png") no-repeat;
+	background-size: 100% 100%;
+}
+.block4{
+	background:#f1efed;
+	background-size: 100% 100%;
+}
+.block5{
+	background: #b4bfc0;
+	background-size: 100% 100%;
+}
+.block6{
+	background: #fff;
+	background-size: 100% 100%;
+}
+.block7{
+	background: #000;
+	background-size: 100% 100%;
 }
 #logo{
 	background: url("logo.png") no-repeat;
@@ -224,8 +241,11 @@ height: auto;
 }
 
 .text_block_emotion{
-	width: 57%;
+	width: 59%;
 	color: #5c616a;
+	position: relative;
+	top: 272px;
+	left: 71px;
 
 }
 .text_block_emotion h1{
@@ -244,14 +264,32 @@ height: auto;
 	padding-left:18.5em;
 }
 .text_block_video{
-	width: 82%;
-	margin: 0 auto;
+	width: 52%;
+	position: relative;
+	top: 184px;
+	left: 518px;
 }
 .text_block_video h1{
 	font-size: 223%;
 	color: #ffffff;
 	line-height: 48.2px;
 	padding-bottom: 18px;
+}
+.text_block_video .label_new_year{
+	background: url("ng_bg.png") no-repeat;
+	width: 83%;
+	/* margin: 0 auto; */
+	height: 79px;
+	color: #fff;
+	font-size: 35px;
+	font-family: "roboto_slablight";
+	font-weight: normal;
+	display: block;
+	position: relative;
+	right: 36px;
+	top: -7px;
+	text-align: center;
+	margin-bottom: 2px;
 }
 .text_block_video span{
 	font-family: "pt_serifitalic";
@@ -291,12 +329,16 @@ height: auto;
 	height: 750px;
 }
 .text_block_celebrity{
-	width: 55%;
+	width: 58%;
+	position: relative;
+	top: 290px;
+	left: -61px;
 }
 .text_block_celebrity h1{
 	font-size: 270%;
 	color: #5c616a;
 	text-align: left;
+	margin-bottom: 16px;
 }
 .text_block_celebrity span{
 	color: #5c616a;
@@ -311,17 +353,24 @@ height: auto;
 	height: 750px;
 }
 .text_block_sv{
-	width: 69%;
+	width: 50%;
+	position: relative;
+	top: 292px;
+	left: 522px;
 }
 .text_block_sv h1{
 	font-size: 270%;
 	color: #fff;
 	text-align: left;
+	margin-bottom: 15px;
 }
 .text_block_sv span{
 	color: #fff;
 	font-size: 133%;
 	font-family: "pt_serifitalic";
+	width: 89%;
+	display: inline-block;
+
 
 }
 .test6{
@@ -332,17 +381,22 @@ height: auto;
 }
 .text_block_master{
 	width: 49%;
+	position: relative;
+	top: 252px;
+	left: -43px;
 }
 .text_block_master h1{
 	font-size: 270%;
 	color: #5c616a;
 	text-align: left;
-	padding-bottom:10px; 
+	margin-bottom: 15px; 
 }
 .text_block_master span{
 	color: #5c616a;
 	font-size: 133%;
 	font-family: "pt_serifitalic";
+	display: inline-block;
+	margin-bottom: 30px;
 }
 .test7{
 	background:#000;
@@ -385,4 +439,16 @@ height: auto;
 	border-left: 1px solid #fff;
 	width:78px;
 	height: 78px;
+}
+.text_block_master .button{
+	font-family: "OpenSansLight";
+	font-size: 1.01em;
+	text-transform: uppercase;
+	width: 220px;
+	height: 60px;
+	background: #e74c3c;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 1em 3.7em;
 }
