@@ -237,6 +237,7 @@ height: 641px;
 	bottom: 0;
 	left: 0;
 }
+
 .svetlakov_block2{
 	background: url("2.png") no-repeat;
 	position: absolute;
@@ -244,6 +245,30 @@ height: 641px;
 	height: 684px;
 	bottom:0;
 	/*float: right;*/
+}
+.svetlakov_block3{
+	background: url("3.png") no-repeat;
+	position: absolute;
+	width: 900px;
+	height: 773px;
+	top: 0;
+	left: 0;
+}
+.svetlakov_block4{
+	background: url("4.png") no-repeat;
+	position: relative;
+	width: 378px;
+	height: 780px;
+	bottom: 182px;
+	float: right;
+}
+.svetlakov_block5{
+	background: url("5.png") no-repeat;
+	position: relative;
+	width: 824px;
+	height: 780px;
+	bottom: 182px;
+	float: left;
 }
 @media screen and (max-width: 1366px) and (min-width: 1280px) {
 	.svetlakov_block1{
@@ -254,24 +279,91 @@ height: 641px;
 		bottom: -125px;
 		position: absolute;
 	}
+	.svetlakov_block3{
+		background-size: 85%;
+		width: 65%;
+		float: left;
+		left: -85px;
+		top: 156px;
+		position: absolute;
+	}
+	.svetlakov_block4{
+		background-size: 100%;
+		right: 0;
+		top: 0;
+		position: absolute;
+	}
+	.svetlakov_block5{
+		background-size: 85%;
+		width: 65%;
+		float: left;
+		left: 0;
+		top: 156px;
+		position: absolute;
+	}
 }
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
 	.svetlakov_block1{
-		background-size: 85%;
+		background-size: 75%;
 		width: 65%;
 		float: left;
 		left: -85px;
 		bottom: 0px;
 		position: absolute;
 	}
+	.svetlakov_block3{
+		background-size: 75%;
+		width: 65%;
+		float: left;
+		left: 0px;
+		top: 168px;
+		position: absolute;
+	}
+	.svetlakov_block4{
+	background-size: 100%;
+	float: right;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	}
+	.svetlakov_block5{
+		background-size: 74%;
+		width: 74%;
+		float: left;
+		left: 52px;
+		bottom: 0px;
+		position: absolute;
+	}	
 }
-@media screen and (min-width: 970px) and (max-width: 1280px) {
+@media screen and  (max-width: 1280px) {
 	.svetlakov_block1{
 		background-size: 84%;
 		width: 76%;
 		float: left;
 		left: -104px;
 		bottom: -135px;
+		position: absolute;
+	}
+	.svetlakov_block3{
+     	background-size: 64%;
+		width: 76%;
+		float: left;
+		left: 0px;
+		top: 239px;
+		position: absolute;
+	}
+	.svetlakov_block4{
+     	background-size: 100%;
+		right: 0px;
+		top: 0px;
+		position: absolute;
+	}
+	.svetlakov_block5{
+		background-size: 64%;
+		width: 76%;
+		float: left;
+		left: 50px;
+		top: 180px;
 		position: absolute;
 	}
 }
@@ -287,40 +379,10 @@ height: 641px;
 	bottom: 163px;
 	float: right;
 }
-.svetlakov_block3{
-	background: url("3.png") no-repeat;
-	position: relative;
-	/* background-size: 100% 100%; */
-	width: 917px;
-	height: 780px;
-	/* max-width: 100%; */
-	/* height: auto; */
-	bottom: -21px;float: left;
-}
-.svetlakov_block4{
-	background: url("4.png") no-repeat;
-	position: relative;
-	/* background-size: 100% 100%; */
-	width: 378px;
-	height: 780px;
-	/* max-width: 100%; */
-	/* height: auto; */
-	bottom: 182px;
-	/* left: 7%; */
-	float: right;
-}
-.svetlakov_block5{
-	background: url("5.png") no-repeat;
-	position: relative;
-	/* background-size: 100% 100%; */
-	width: 824px;
-	height: 780px;
-	/* max-width: 100%; */
-	/* height: auto; */
-	bottom: 182px;
-	/* left: 7%; */
-	float: left;
-}
+
+
+
+
 .text_block{
 	display: block;
 	position: relative;
@@ -362,7 +424,8 @@ height: 641px;
 .text_block_video{
 	width: 52%;
 	position: relative;
-	top: 184px;
+	top: 0;
+	padding-top: 184px;
 	left: 561px;
 }
 .text_block_video h1{
