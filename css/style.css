@@ -492,6 +492,9 @@ height: auto;
 .default {
     display:none;
 }
+.default ul {
+    display:none;
+}
 .default #logo_bubble{
 	display:none;
 }
@@ -507,4 +510,5 @@ height: auto;
 #logo_bubble{
 	margin: 37px auto 23px auto;
 }
+
   

@@ -11,26 +11,28 @@
 					window.location.hash = target;
 					});
 			});		
-
+			
 
 			var $menu = $("#menu_top");
             
 			$(window).scroll(function(){
 				if ( $(this).scrollTop() > 600 && $menu.hasClass("default") ){
-					$menu.fadeOut('slow',function(){
+					$menu.slideUp('slow',function(){
 						$(this).removeClass("default")
 							   .addClass("fixed transbg")
-							   .fadeIn('slow');
+							   .slideDown('slow');
 					});
 				} else if($(this).scrollTop() <= 700 && $menu.hasClass("fixed")) {
-					$menu.fadeOut('slow',function(){
+					$menu.slideUp('slow',function(){
 						$(this).removeClass("fixed transbg")
 							   .addClass("default")
-							   .fadeIn('slow');
+							   .slideDown('slow');
 					});
 				}
 			});//scroll
-        
+            
+//  $('.text_block_emotion').fadeThis({speed: 1000});
+
 
 	});//jQuery
 	
