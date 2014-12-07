@@ -142,7 +142,7 @@ h1{
 	min-height: 768px;
 	max-height: 800px;
 	min-width: 1280px;
-	max-width: 1920px;
+	max-width: 1980px;
 	position: relative;
 }
 .layer{
@@ -239,11 +239,11 @@ height: 641px;
 }
 .svetlakov_block2{
 	background: url("2.png") no-repeat;
-	position: absolute;
+	position: relative;
 	width: 672px;
 	height: 684px;
-	bottom:0;
-	/*float: right;*/
+	bottom: 213px;
+	float: right;
 }
 @media screen and (max-width: 1366px) and (min-width: 1280px) {
 	.svetlakov_block1{
@@ -255,17 +255,26 @@ height: 641px;
 		position: absolute;
 	}
 }
-@media screen and (min-width: 1366px) and (max-width: 1920px) {
+@media screen and (min-width: 1366px) {
 	.svetlakov_block1{
 		background-size: 85%;
 		width: 65%;
 		float: left;
 		left: -85px;
-		bottom: 0px;
+		bottom:-143px;
+		position: absolute;
+	}
+	.svetlakov_block2{
+		background-size: 100%;
+		width: 41%;
+		height: 81%;
+		/* float: left; */
+		right: 0;
+		bottom: 0;
 		position: absolute;
 	}
 }
-@media screen and (min-width: 970px) and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
 	.svetlakov_block1{
 		background-size: 84%;
 		width: 76%;
@@ -274,19 +283,17 @@ height: 641px;
 		bottom: -135px;
 		position: absolute;
 	}
+	.svetlakov_block2{
+		background-size: 100%;
+		width: 46%;
+		height: 91%;
+		right: 2px;
+		bottom: -101px;
+		position: absolute;
+	}
 }
 
-.svetlakov_block2{
-	background: url("2.png") no-repeat;
-	position: relative;
-	/* background-size: 100% 100%; */
-	width: 672px;
-	height: 684px;
-	/* max-width: 100%; */
-	/* height: auto; */
-	bottom: 163px;
-	float: right;
-}
+
 .svetlakov_block3{
 	background: url("3.png") no-repeat;
 	position: relative;
