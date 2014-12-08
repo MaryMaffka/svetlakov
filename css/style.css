@@ -156,6 +156,16 @@ h1{
 	padding-top: 1.688em;
 }
 
+.scroll_down:after{
+	content: "";
+	display: block;
+	background: url("sprite.png") no-repeat -150px -8px;
+	width: 100px;
+	height: 117px;
+	position: relative;
+	bottom: 0;
+}
+
 /*Block1*/
 .block1{
 	background: url("block_main.png") no-repeat;
@@ -243,8 +253,8 @@ height: 641px;
 	position: relative;
 	width: 672px;
 	height: 684px;
-	bottom: 213px;
-	float: right;
+	bottom:0;
+	right:0;
 }
 .svetlakov_block3{
 	background: url("3.png") no-repeat;
@@ -270,21 +280,46 @@ height: 641px;
 	bottom: 182px;
 	float: left;
 }
+.microphone_big{
+	background: url("6.png") no-repeat;
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 808px;
+	height: 780px;
+}
+.microphone_small{
+	background: url("7.png") no-repeat;
+	position: absolute;
+	bottom:0;
+	right: 0;
+	width: 583px;
+	height: 438px;
+}
 @media screen and (max-width: 1366px) and (min-width: 1280px) {
 	.svetlakov_block1{
-		background-size: 96%;
-		width: 65%;
+		background-size: 101%;
+		width: 56%;
+		/* height: 85%; */
 		float: left;
 		left: -85px;
-		bottom: -125px;
+		bottom: -183px;
+		position: absolute;
+	}
+	.svetlakov_block2{
+		background-size: 96%;
+		width: 44%;
+		height: 91%;
+		right: 0px;
+		top: 219px;
 		position: absolute;
 	}
 	.svetlakov_block3{
 		background-size: 85%;
 		width: 65%;
 		float: left;
-		left: -85px;
-		top: 156px;
+		left: -86px;
+		top: 166px;
 		position: absolute;
 	}
 	.svetlakov_block4{
@@ -300,6 +335,22 @@ height: 641px;
 		left: 0;
 		top: 156px;
 		position: absolute;
+	}
+	.microphone_big{
+		background-size: 100%;
+		width: 796px;
+		height: 768px;
+		position: absolute;
+		/* top: 124px; */
+		right: 0;
+	}
+	.microphone_small{
+		background-size: 100%;
+		width: 38%;
+		height: 47%;
+		position: absolute;
+		bottom: 0px;
+		right: 0;
 	}
 }
 @media screen and (min-width: 1366px) {
@@ -384,6 +435,14 @@ height: 641px;
 	}
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 267956ab55e6cc43a2a60072ae452c6493b75886
 .text_block{
 	display: block;
 	position: relative;
@@ -642,25 +701,25 @@ left: 1px;
 
     
 /*main menu*/
-.layer-wrapper_fixed-top {
+.layer-sub-navigation{
     text-transform: uppercase;
     text-align: center;
     line-height: 20px;
     background: #FFF;
 }
-.layer-wrapper_fixed-top ul {
+.layer-sub-navigation ul {
 	padding: 0;
 	margin: 0;
 	display: block;
 	margin: 14px auto;
 	width: 900px;
 }
-.layer-wrapper_fixed-top li{
+.layer-sub-navigation li{
     display: inline;
     list-style:none;
     margin: 5px 7px;
 }
-.layer-wrapper_fixed-top li a {
+.layer-sub-navigation li a {
 	margin: 0 10px;
 	padding-bottom: 16px;
 	font-family: "OpenSansLight";
@@ -671,16 +730,9 @@ left: 1px;
 	font-weight: bold;
 }
 
-.default {
-    display:none;
-}
-.default ul {
-    display:none;
-}
+
+
 .layer-sub-navigation #logo_bubble,.layer-sub-navigation .g-clear{
-	height:0px;
-}
-.layer-wrapper_fixed-top #logo_bubble,.layer-wrapper_fixed-top .g-clear{
 		height:auto;
 }
 .fixed {
@@ -699,38 +751,39 @@ left: 1px;
   
 .signature{
 	position: relative;
-width: 47.63%;
-margin: 0 auto;
-bottom: 0;
-top: 128px;
-font-family: "OpenSansLight";
-font-size: 82%; 
-
+	width: 47.63%;
+	margin: 0 auto;
+	bottom: 0;
+	top: 128px;
+	font-family: "OpenSansLight";
+	font-size: 82%; 
 }
 
-.layer-wrapper_fixed-top {
-position: fixed;
-width: 100%;
-top: 0;
-background: #FFF;
-opacity: 0.9;
-z-index: 100;
--webkit-transition-property: background;
--webkit-transition-duration: 0.3s;
--webkit-transition-timing-function: ease-out;
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
--moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-behavior: url(/themes/default/css/PIE.htc);
+.layer-sub-navigation {
+	position: fixed;
+	width: 100%;
+	background: #FFF;
+	opacity: 0.9;
+	z-index: 100;
+	top:-162px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+	behavior: url(/themes/default/css/PIE.htc);
+	
+	
 }
-.layer-wrapper_fixed-top a{
- color:black;
+.layer-sub-navigation a{
+	color:black;
 }
-.g-clear .col{
+/*.g-clear .col{
 	float:none;
-}
+}*/
 .navigation__item_selected a{
 	border-bottom:2px solid #e74c3c;
 }
-  
-
+.layer-sub-navigation .col {
+	position: relative;
+	float: none;
+	min-height: 1px;
+}

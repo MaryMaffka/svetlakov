@@ -6,17 +6,12 @@
 				$target = $(target);
 
 				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top-152
+					'scrollTop': $target.offset().top-150
 					}, 900, 'swing', function () {
 					window.location.hash = target;
 					});
 			});		
-			
-
-
-
-	});//jQuery
-	
+	});
 	
 	function NavigationOnPage(options){
     this.defaultOptions = {
@@ -137,13 +132,25 @@ SubNavigation.prototype.initEvents = function(){
 
     $(window).on('scroll', function(){
         sct = $(this).scrollTop();
-        $('.fpseudo').show();
-        if(sct >= that.subMenuParams.offsetTop){
-            that.direction = that.scrollDrection;
+		$('.fpseudo').show();
+		if(sct >= 100){
+			that.direction = that.direction;
             that.scrollDrection = 'down';
+			if(sct == 100){
+			that.jLSubNav.animate({
+				'top':'0'
+				}, 1500 );
+			that.jLSubNav.addClass(that.classes.fixedLayerSubNav);
+			}
+			
         }else{
             that.direction = that.scrollDrection;
             that.scrollDrection = 'up';
+			that.jLSubNav.animate({
+				'top':'-162px'
+			}, 1500 );
+			that.jLSubNav.removeClass(that.classes.fixedLayerSubNav);
+		
         }
         if(that.scrollDrection != that.direction){           
             that.direction = that.scrollDrection;
@@ -157,14 +164,11 @@ SubNavigation.prototype.updateHeader = function(){
     var that = this;
 
     if(that.direction == 'down'){
-        that.jLSubNav.addClass(that.classes.fixedLayerSubNav);
-        that.jLHeader.css('padding-bottom', that.subMenuParams.height)
+	
     }else{
-        that.jLSubNav.removeClass(that.classes.fixedLayerSubNav);
-        that.jLHeader.css('padding-bottom', 0)
+
     }
 
-    that.jLSubNav[that.direction == 'down' ? 'addClass' : 'removeClass'](that.classes.fixedLayerSubNav);
 };
 
 $(function(){
