@@ -360,7 +360,7 @@ height: 641px;
 }
 @media screen and (min-width: 1600px) and (max-width: 1920px){
 	.svetlakov_block1{
-		background-size: 94%;
+		background-size: 91%;
 		width: 54%;
 		height: 80%;
 		float: left;
@@ -450,8 +450,40 @@ height: 641px;
 	}
 }
 @media screen and (max-width: 1600px) and (min-width: 1400px) {
-
-
+	.svetlakov_block1{
+		background-size: 94%;
+		width: 54%;
+		height: 76%;
+		float: left;
+		left: -85px;
+		bottom: 0;
+		position: absolute;
+	}
+	.svetlakov_block2{
+		background-size: 100%;
+		width: 41%;
+		height: 77%;
+		/* float: left; */
+		right: 0;
+		bottom: 0;
+		position: absolute;
+	}
+	.svetlakov_block3{
+		background-size: 75%;
+		width: 65%;
+		float: left;
+		left: 0px;
+		top: 179px;
+		position: absolute;
+	}
+	.microphone_big{
+		background-size: 100%;
+		width: 796px;
+		height: 768px;
+		position: absolute;
+		/* top: 124px; */
+		right: 0;
+	}
 }
 .text_block{
 	display: block;
@@ -485,7 +517,7 @@ height: 641px;
 	font-size: 131%;
 	width: 91%;
 	display: inline-block;
-	color: #5c616a;
+	color: #8d9096;
 }
 .layer_emotion{
 	padding: 17em;
@@ -570,7 +602,7 @@ height: 641px;
 	margin-bottom: 16px;
 }
 .text_block_celebrity span{
-	color: #5c616a;
+	color: #8d9096;
 	font-size: 133%;
 	font-family: "pt_serifitalic";
 
@@ -621,7 +653,7 @@ height: 641px;
 	margin-bottom: 15px; 
 }
 .text_block_master span{
-	color: #5c616a;
+	color: #8d9096;
 	font-size: 133%;
 	font-family: "pt_serifitalic";
 	display: inline-block;
@@ -701,11 +733,12 @@ left: 1px;
 	text-transform: uppercase;
 	width: 220px;
 	height: 60px;
-	background: #e74c3c;
+	background: #FF2E19;
 	text-align: center;
 	vertical-align: middle;
 	display: inline-block;
 	padding: 1em 3.7em;
+	letter-spacing: 1px;
 }
 
 
