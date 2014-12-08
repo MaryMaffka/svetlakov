@@ -4,14 +4,20 @@
 
 				var target = this.hash,
 				$target = $(target);
-
+		
+				$('.layer-sub-navigation').animate({
+					'top':'0'
+					}, 1500 );
+				$('.layer-sub-navigation').addClass('layer-wrapper_fixed-top');
 				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top-150
+					'scrollTop': $target.offset().top
 					}, 900, 'swing', function () {
 					window.location.hash = target;
 					});
 			});		
 	});
+	
+
 	
 	function NavigationOnPage(options){
     this.defaultOptions = {
@@ -136,8 +142,8 @@ SubNavigation.prototype.initEvents = function(){
 		if(sct >= 100){
 			that.direction = that.direction;
             that.scrollDrection = 'down';
-			if(sct == 100){
-			that.jLSubNav.animate({
+			if(!$('.layer-sub-navigation').hasClass("layer-wrapper_fixed-top")){
+			that.jLSubNav.stop().animate({
 				'top':'0'
 				}, 1500 );
 			that.jLSubNav.addClass(that.classes.fixedLayerSubNav);
@@ -146,7 +152,7 @@ SubNavigation.prototype.initEvents = function(){
         }else{
             that.direction = that.scrollDrection;
             that.scrollDrection = 'up';
-			that.jLSubNav.animate({
+			that.jLSubNav.stop().animate({
 				'top':'-162px'
 			}, 1500 );
 			that.jLSubNav.removeClass(that.classes.fixedLayerSubNav);
