@@ -254,7 +254,7 @@ height: 641px;
 	width: 672px;
 	height: 684px;
 	bottom:0;
-	/*float: right;*/
+	right:0;
 }
 .svetlakov_block3{
 	background: url("3.png") no-repeat;
