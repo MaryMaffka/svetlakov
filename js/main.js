@@ -132,8 +132,7 @@ SubNavigation.prototype.initEvents = function(){
 
     $(window).on('scroll', function(){
         sct = $(this).scrollTop();
-		console.log(sct);
-        $('.fpseudo').show();
+		$('.fpseudo').show();
 		if(sct >= 100){
 			that.direction = that.direction;
             that.scrollDrection = 'down';
@@ -166,17 +165,10 @@ SubNavigation.prototype.updateHeader = function(){
 
     if(that.direction == 'down'){
 	
-		
-
-	//	that.jLHeader.css('padding-bottom', that.subMenuParams.height)
     }else{
 
-	 
-    //    that.jLSubNav.removeClass(that.classes.fixedLayerSubNav);
-     //   that.jLHeader.css('padding-bottom', 0)
     }
 
-  //  that.jLSubNav[that.direction == 'down' ? 'addClass' : 'removeClass'](that.classes.fixedLayerSubNav);
 };
 
 $(function(){
