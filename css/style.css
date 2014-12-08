@@ -168,12 +168,12 @@ h1{
 
 /*Block1*/
 .block1{
-	background: url("block_main.jpg") no-repeat;
+	background:#720216  url("block_main.jpg") no-repeat;
 	background-size: 100% 100%; 
 }
 
 .block2{
-	background: url("block_emotion.jpg") no-repeat;
+	background: #seceae7 url("block_emotion.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .block3{
@@ -630,7 +630,7 @@ left: 1px;
 }
 .block_contacts span{
 	font-size: 155%;
-	width: 67%;
+	width: 69%;
 	margin: 0 auto;
 	display: block;
 }
