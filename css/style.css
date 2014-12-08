@@ -163,21 +163,21 @@ h1{
 	width: 100px;
 	height: 117px;
 	position: relative;
-	bottom: -288px;
+	bottom: -254px;
 }
 
 /*Block1*/
 .block1{
-	background: url("block_main.png") no-repeat;
+	background: url("block_main.jpg") no-repeat;
 	background-size: 100% 100%; 
 }
 
 .block2{
-	background: url("block_emotion.png") no-repeat;
+	background: url("block_emotion.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .block3{
-	background: url("block_sv.png") no-repeat;
+	background: #014556 url("block_sv.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .block4{
@@ -367,7 +367,7 @@ height: 641px;
 	.svetlakov_block2{
 		background-size: 100%;
 		width: 41%;
-		height: 81%;
+		height: 77%;
 		/* float: left; */
 		right: 0;
 		bottom: 0;
@@ -378,7 +378,7 @@ height: 641px;
 		width: 65%;
 		float: left;
 		left: 0px;
-		top: 168px;
+		top: 179px;
 		position: absolute;
 	}
 	.svetlakov_block4{
@@ -391,6 +391,7 @@ height: 641px;
 	.svetlakov_block5{
 		background-size: 74%;
 		width: 74%;
+		height: 96%;
 		float: left;
 		left: 52px;
 		bottom: 0px;
@@ -791,6 +792,8 @@ left: 1px;
 	padding-top: 2em;
 }
 .scroll_down {
+	display: block;
 	width: 9%;
 	margin: 0 auto;
+	cursor: pointer;
 }
