@@ -355,13 +355,14 @@ height: 641px;
 		right: 0;
 	}
 }
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1366px) and (max-width: 1920px){
 	.svetlakov_block1{
-		background-size: 86%;
-		/* width: 100%; */
+		background-size: 94%;
+		width: 54%;
+		height: 80%;
 		float: left;
 		left: -85px;
-		bottom: -143px;
+		bottom: 0;
 		position: absolute;
 	}
 	.svetlakov_block2{
@@ -400,11 +401,11 @@ height: 641px;
 }
 @media screen and (max-width: 1280px) {
 	.svetlakov_block1{
-		background-size: 84%;
-		width: 76%;
-		float: left;
-		left: -104px;
-		bottom: -135px;
+		background-size: 80%;
+		width: 65%;
+		height: 69%;
+		left: -92px;
+		bottom: 0;
 		position: absolute;
 	}
 	.svetlakov_block2{
@@ -435,6 +436,14 @@ height: 641px;
 		left: 50px;
 		top: 180px;
 		position: absolute;
+	}
+	.microphone_small{
+		background-size: 100%;
+		width: 38%;
+		height: 47%;
+		position: absolute;
+		bottom: 0px;
+		right: 0;
 	}
 }
 
