@@ -11,9 +11,7 @@
 				$('.layer-sub-navigation').addClass('layer-wrapper_fixed-top');
 				$('html, body').stop().animate({
 					'scrollTop': $target.offset().top
-					}, 900, 'swing', function () {
-					window.location.hash = target;
-					});
+					}, 900, 'swing');
 			});		
 	});
 	
