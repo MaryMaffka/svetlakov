@@ -43,6 +43,7 @@
 body{
 	font-family: "roboto_slablight",Arial;
 	font-size: 100%;
+	min-width: 1280px;
 }
 ul {
 	list-style-type: none;
@@ -173,7 +174,7 @@ h1{
 }
 
 .block2{
-	background: #seceae7 url("block_emotion.jpg") no-repeat;
+	background: #eceae7 url("block_emotion.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 .block3{
@@ -355,7 +356,7 @@ height: 641px;
 		right: 0;
 	}
 }
-@media screen and (min-width: 1366px) and (max-width: 1920px){
+@media screen and (min-width: 1600px) and (max-width: 1920px){
 	.svetlakov_block1{
 		background-size: 94%;
 		width: 54%;
@@ -446,8 +447,10 @@ height: 641px;
 		right: 0;
 	}
 }
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
 
 
+}
 .text_block{
 	display: block;
 	position: relative;
@@ -803,6 +806,12 @@ left: 1px;
 .scroll_down {
 	display: block;
 	width: 9%;
+	position: relative;
 	margin: 0 auto;
 	cursor: pointer;
+	z-index: 1000;
+}
+.navigation__item_selected.link-selected a{
+	color:#000;
+
 }
