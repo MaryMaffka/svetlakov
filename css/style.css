@@ -160,7 +160,7 @@ h1{
 .scroll_down:after{
 	content: "";
 	display: block;
-	background: url("sprite.png") no-repeat -150px -8px;
+	background: url("sprite.png") no-repeat -127px 1px;
 	width: 100px;
 	height: 117px;
 	position: relative;
@@ -207,6 +207,8 @@ h1{
 	padding-top: 2.375em;
 	width: 68%;
 	margin: 0 auto;
+	position: relative;
+	z-index: 10000;
 }
 #menu a{
 	text-decoration: none;
@@ -813,5 +815,5 @@ left: 1px;
 }
 .navigation__item_selected.link-selected a{
 	color:#000;
-
+	
 }
