@@ -163,7 +163,7 @@ h1{
 	width: 100px;
 	height: 117px;
 	position: relative;
-	bottom: 0;
+	bottom: -288px;
 }
 
 /*Block1*/
@@ -250,11 +250,13 @@ height: 641px;
 
 .svetlakov_block2{
 	background: url("2.png") no-repeat;
-	position: relative;
+	position: absolute;
+	height: 50%;
 	width: 672px;
 	height: 684px;
-	bottom:0;
-	right:0;
+	bottom: 0;
+	right: 0;
+	/* float: right; */
 }
 .svetlakov_block3{
 	background: url("3.png") no-repeat;
@@ -353,13 +355,13 @@ height: 641px;
 		right: 0;
 	}
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px){
 	.svetlakov_block1{
-		background-size: 75%;
-		width: 65%;
+		background-size: 86%;
+		/* width: 100%; */
 		float: left;
 		left: -85px;
-		bottom:-143px;
+		bottom: -143px;
 		position: absolute;
 	}
 	.svetlakov_block2{
@@ -787,4 +789,8 @@ left: 1px;
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 2em;
+}
+.scroll_down {
+	width: 9%;
+	margin: 0 auto;
 }
