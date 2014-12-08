@@ -435,14 +435,7 @@ height: 641px;
 	}
 }
 
-<<<<<<< HEAD
-=======
 
-
-
-
-
->>>>>>> 267956ab55e6cc43a2a60072ae452c6493b75886
 .text_block{
 	display: block;
 	position: relative;
@@ -786,4 +779,12 @@ left: 1px;
 	position: relative;
 	float: none;
 	min-height: 1px;
+}
+.text_block {
+	display: block;
+	position: relative;
+	width: 42%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 2em;
 }
