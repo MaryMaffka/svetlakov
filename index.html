@@ -5,6 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+        <meta name="MobileOptimized" content="1280"/>
         <!-- <base href="{$base_url}"> -->
         <title>Svetlakov Event</title>
         <script>
@@ -15,7 +16,8 @@
          <link rel="stylesheet" href="css/style.css"  media="all">
 		   <script src="js/jquery-1.10.2.min.js"></script>
 		    <script type="text/javascript" src="js/main.js"></script>
-		    <script type="text/javascript" src="js/jquery.fadethis.js"></script>
+        <script type="text/javascript" src="js/jquery.fadethis.js"></script>
+		    <script type="text/javascript" src="js/jquery.popuper.js"></script>
 					    <script type="text/javascript" src="js/waypoints.min.js"></script>
 		    <script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
 
@@ -29,6 +31,7 @@
 		  <div class="col">
 		  <div id="logo_bubble"><img src="css/logo_bubble.png"></div>
 			<ul class="navigation sub-navigation navigation_on-page no-visited cols">
+        <li class="col navigation_item"><a class="pseudo" href="#nav-section-1">ГЛАВНАЯ</a></li>
 				<li class="col navigation_item"><a class="pseudo" href="#nav-section-2">О ПРОЕКТЕ</a></li>
 					<li class="col navigation_item"><a class="pseudo" href="#nav-section-3">ВИДЕОПОЗДРАВЛЕНИЕ</a></li>
 					<li class="col navigation_item"><a class="pseudo" href="#nav-section-4">CELEBRITY</a></li>
@@ -39,7 +42,7 @@
 		  </div>
 		</div>
 	  </div>
-    <div id="nav-section-1" class="wrapper block1">
+    <div id="nav-section-1" class="wrapper block1 nav-section">
         <div class="layer layer_header">
             <div id="logo"></div>
         </div>
@@ -58,19 +61,67 @@
                 <span>Я — Сергей Светлаков, имею честь представить Вам мой новый проект Svetlakov Event!</span>
             </div>
          </div>
+
          <div class="layer">
-            <a class="scroll_down" href="#nav-section-2"></a>
+          <span data-yt="eyU3bRy2x44" data-width="640" data-height="360" class="video__link-white" style="visibility: hidden;"></span>
+            <a class="scroll_down" href="#nav-section-2">Скролл вниз</a>
           </div>
           <div class="svetlakov_block1"></div>
           <div class="microphone_small"></div>
           
     </div>
+ <div class="popup-container popup-container_video g-hidden g-opacity-animated">
+    <h3 class="popup-container__header popup-container__header_compact">*</h3>
+    <div class="popup-container__close-btn">×</div>
+    <div class="popup-video">
+      <div class="popup-video__player">
+        <iframe></iframe>
+      </div>
+    </div>
+    <script>
+      $(function () {
+       var block = $('.popup-container_video');
+       var header = block.find('.popup-container__header');
+       var delay = 500;
+       block.popuper({
+        open: '.video__link-white',
+        fader: '.page-fader',
+        close: '.popup-container__close-btn',
+        animatedClass: 'g-opacity-animated',
+        hideDelay:  delay,
+        onShow: function (event, params) {
+         var item = $(event.delegateTarget);
+         var width = item.data('width') || 640;
+         var height = item.data('height') || 360;
+         header.text( $.trim(item.text()) );
+         block.css({
+          width: width,
+          height: height
+         });
+         block.find('iframe').attr({
+          width: width,
+          height: height,
+          src: '//www.youtube.com/embed/' + item.data('yt'),
+          fremeborder: 0,
+          allowfullscreen: 'allowfullscreen',
+          style: 'border: none'
+         });
+        },
+        onHide: function () {
+         setTimeout(function () {
+          block.find('iframe').replaceWith( $('<iframe/>') );
+         }, delay);
+        }
+       });
+      });
+    </script>
+  </div>
    <div id="nav-section-2" class="wrapper block2 nav-section">
    <!--  <div class="svetlakov_block2"></div> -->
         <div class="layer">
              <div class="text_block_emotion slide-left">
 			
-                <h1>Наша жизнь состоит из эмоций</h1>
+                <h1>Жизнь состоит из эмоций</h1>
                 <span>А событие, которые Вы отмечаете в кругу близких или коллег — это одна большая эмоция на всех! Я бы хотел стать частью этих важных событий Вашей жизни!</br>
                 Страна - большая, а я, к моему огромному сожалению, не могу присутствовать на всех праздниках нашей необъятной Родины и разделить 
                 с Вами торжество момента! Поэтому, я представляю Вам мой новый проект — Svetlakov Event!</span>
@@ -120,7 +171,7 @@
 			
 					<h1>Ведущий</h1>
 					<span>Если Вы заинтересованы во мне, как в ведущем мероприятия — обращайтесь, обсудим!</span>
-					<a href="mailto:welcome@svetlakovevent.ru" class="button">Связаться</a>
+					<!-- <a href="mailto:welcome@svetlakovevent.ru" class="button">Связаться</a> -->
 			
             </div>
         </div>
@@ -130,7 +181,7 @@
         <div class="layer">
           <div class="block_contacts">
             <span class="block_phone">+7 916 18-000-55</span>
-            <span class="block_email">welcome@svetlakovevent.ru</span>
+            <span class="block_email"><a style="text-decoration:underline;" href="mailto:welcome@svetlakovevent.ru">welcome@svetlakovevent.ru</a></span>
             <div class="block_main">
               <span class="mail"></span>
               <span class="phone"></span>
@@ -143,6 +194,6 @@
           </div>
         </div>
     </div>
-		<script>$(window).fadeThis({speed: 1000});</script>
+		<script>//$(window).fadeThis({speed: 1000});</script>
   </body>
 </html>
