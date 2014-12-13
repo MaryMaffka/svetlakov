@@ -40,10 +40,13 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+html, body {
+    height:100%;
+  }
 body{
 	font-family: "roboto_slablight",Arial;
 	font-size: 100%;
-	min-width: 1280px;
+	/*min-width: 1280px;*/
 }
 ul {
 	list-style-type: none;
@@ -138,12 +141,12 @@ h1{
     float: right;
 }
 .wrapper{
-	width:100%;
+	/*width:100%;
 	height: 100%;
 	min-height: 768px;
 	max-height: 800px;
 	min-width: 1280px;
-	max-width: 1980px;
+	max-width: 1980px;*/
 	position: relative;
 }
 .layer{
@@ -158,26 +161,30 @@ h1{
 }
 .scroll_down {
 	display: block;
-	width: 9%;
-	position: relative;
-	font-size: 70%;
-	letter-spacing: 1px;
-	margin: 0 auto;
-	cursor: pointer;
-	z-index: 1000;
-	text-align: center;
-	text-transform: uppercase;
-	margin-top: 77px;
+width: 111px;
+position: absolute;
+bottom: 0;
+left: 47%;
+/* margin-left: 20px; */
+font-size: 70%;
+letter-spacing: 1px;
+margin: 0 auto;
+cursor: pointer;
+z-index: 1000;
+text-align: center;
+text-transform: uppercase;
+/* margin-top: 77px;*/
 }
 .scroll_down:before{
 	content: "";
 	display: block;
 	background: url("sprite.png") no-repeat -157px 1px;
-	width: 30%;
+	width: 28%;
 	height: 57px;
 	position: relative;
-	left: 30px;
+	left: 50%;
 	margin-bottom: 9px;
+	margin-left: -22px;
 }
 
 .scroll_down:after{
@@ -191,7 +198,9 @@ h1{
 	margin-top:10px;
 }
 .video__link-white{
-	width: 10%;
+	width: 100%;
+	top: 50px;
+	left: 20%;
 	margin: 0 auto;
 	display: block;
 	z-index: 1000;
@@ -200,12 +209,36 @@ h1{
 .video__link-white:before{
 	content: '';
 	display: block;
-	background: url("sprite.png") no-repeat -7px -48px;
-	width: 114px;
-	height: 117px;
-	margin-top: 93px;
+	background: url("play.png") no-repeat center;
+	width: 110px;
+	height: 110px;
+	position: relative;
+	top: 0px;
 	cursor: pointer;
 }
+/* iPad в книжной ориентации  ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.video__link-white{
+	width: 59%;
+	top: -10px;
+	left:20%;
+	margin: 0 auto;
+	display: block;
+	z-index: 1000;
+	position: relative;
+}
+.video__link-white:before{
+	content: '';
+	display: block;
+	background: url("play.png") no-repeat center;
+	width: 110px;
+	height: 110px;
+	position: relative;
+	top: 0px;
+	cursor: pointer;
+}
+}
+ 
 /*Block1*/
 .block1{
 	background:#720216  url("block_main.jpg") no-repeat;
@@ -234,7 +267,8 @@ h1{
 }
 .block7{
 	background: #000;
-	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
 }
 #logo{
 	background: url("logo.png") no-repeat;
@@ -341,63 +375,7 @@ height: 641px;
 	height: 438px;
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1280px) {
-	.svetlakov_block1{
-		background-size: 101%;
-		width: 56%;
-		/* height: 85%; */
-		float: left;
-		left: -85px;
-		bottom: -183px;
-		position: absolute;
-	}
-	.svetlakov_block2{
-		background-size: 96%;
-		width: 44%;
-		height: 91%;
-		right: 0px;
-		top: 219px;
-		position: absolute;
-	}
-	.svetlakov_block3{
-		background-size: 85%;
-		width: 65%;
-		float: left;
-		left: -86px;
-		top: 166px;
-		position: absolute;
-	}
-	.svetlakov_block4{
-		background-size: 100%;
-		right: 0;
-		top: 0;
-		position: absolute;
-	}
-	.svetlakov_block5{
-		background-size: 85%;
-		width: 65%;
-		float: left;
-		left: 0;
-		top: 156px;
-		position: absolute;
-	}
-	.microphone_big{
-		background-size: 100%;
-		width: 796px;
-		height: 768px;
-		position: absolute;
-		/* top: 124px; */
-		right: 0;
-	}
-	.microphone_small{
-		background-size: 100%;
-		width: 38%;
-		height: 47%;
-		position: absolute;
-		bottom: 0px;
-		right: 0;
-	}
-}
+
 
 @media screen and (min-width: 1600px) and (max-width: 1920px){
 	.svetlakov_block1{
@@ -442,53 +420,6 @@ height: 641px;
 		bottom: 0px;
 		position: absolute;
 	}	
-}
-@media screen and (max-width: 1300px) {
-	.svetlakov_block1{
-		background-size: 80%;
-		width: 65%;
-		height: 67%;
-		left: -92px;
-		bottom: 0;
-		position: absolute;
-	}
-	.svetlakov_block2{
-		background-size: 100%;
-		width: 46%;
-		height: 91%;
-		right: 2px;
-		bottom: -101px;
-	}
-	.svetlakov_block3{
-     	background-size: 64%;
-		width: 76%;
-		float: left;
-		left: 0px;
-		top: 239px;
-		position: absolute;
-	}
-	.svetlakov_block4{
-     	background-size: 100%;
-		right: 0px;
-		top: 0px;
-		position: absolute;
-	}
-	.svetlakov_block5{
-		background-size: 64%;
-		width: 76%;
-		float: left;
-		left: 50px;
-		top: 180px;
-		position: absolute;
-	}
-	.microphone_small{
-		background-size: 100%;
-		width: 38%;
-		height: 47%;
-		position: absolute;
-		bottom: 0px;
-		right: 0;
-	}
 }
 @media screen and (max-width: 1600px) and (min-width: 1400px) {
 	.svetlakov_block1{
@@ -568,7 +499,7 @@ height: 641px;
 	width: 52%;
 	position: relative;
 	top: 0;
-	padding-top: 184px;
+	padding-top: 120px;
 	left: 561px;
 	z-index: 1000;
 }
@@ -658,8 +589,8 @@ height: 641px;
 .text_block_sv{
 	width: 50%;
 	position: relative;
-	top: 292px;
-	left: 522px;
+	top: 283px;
+	left: 616px;
 	z-index: 1000;
 }
 .text_block_sv h1{
@@ -709,13 +640,15 @@ height: 641px;
 	height: 723px;
 }
 .block_contacts{
-	width: 27%;
+width: 27%;
 margin: 0 auto;
 color: #fff;
 font-family: "OpenSans";
-position: relative;
-top: 290px;
-left: 1px;
+position: absolute;
+/* top: 290px; */
+margin-left: -14%;
+left: 50%;
+bottom: 0;
 }
 .block_contacts span{
 	font-size: 155%;
@@ -729,10 +662,11 @@ left: 1px;
 	width:80%;
 }
 .block_main{
-	width: 308px;
+	width: 28%;
+	margin: 0 auto;
 	height: 78px;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 	opacity: 0.2;
 }
 .block_main .mail{ 
@@ -747,9 +681,11 @@ left: 1px;
 	background: url("sprite.png") no-repeat -4px -1px;
 	width: 31px;
 	height: 31px;
+	margin: 0 auto;
 	position: absolute;
 	top: 154px;
-	left: 101px;
+	right: 50%;
+	margin-right: 21px;
 }
 /*.block_main .mail:before{
 	content: "";
@@ -786,9 +722,10 @@ left: 1px;
 	background: url("sprite.png") no-repeat -35px -3px;
 	width: 31px;
 	height: 31px;
+	margin: 0 auto;
 	position: relative;
-	top: -59px;
-	left: 182px;
+	top: -61px;
+	left: 40px
 }
 .text_block_master .button{
 	font-family: "OpenSansLight";
@@ -859,10 +796,11 @@ left: 1px;
 	position: relative;
 	width: 47.63%;
 	margin: 0 auto;
-	bottom: 0;
-	top: 128px;
+	bottom: 20px;
+	/*top: 128px;*/
 	font-family: "OpenSansLight";
 	font-size: 82%; 
+	padding-top: 18em;
 }
 
 .layer-sub-navigation {
@@ -897,6 +835,7 @@ left: 1px;
 	display: block;
 	position: relative;
 	width: 42%;
+	top: 100px;
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 2em;
@@ -907,26 +846,135 @@ left: 1px;
 	color:#000;
 	
 }
+    .contacts{
+		width: 30%;
+		margin: 118px auto 0;
+    }
+    .contacts span{
+		display: block;
+		font-size: 80%;
+		font-family: "OpenSans";
+		padding-left: 30px;
+    }
+    .contacts hr{
+    	color: #fffFFF;
+width: 103%;
+opacity: 0.3;
+position: relative;
+/*top: -41px;*/
+
+    }
+	.contacts .phone{
+		font-size: 148%;
+		padding-bottom: 2px;
+		padding-top: 18px;
+		padding-left: 30px;
+	}
+	.contacts .mail{
+		font-size: 80%;
+		
+	}
+	.contacts .phone a:before{
+		display: inline-block;
+		content: '';
+		background: url("sprite.png") no-repeat -35px -3px;
+		width: 31px;
+		height: 31px;
+		position: relative;
+		margin-right: 13px;
+	}
+	.contacts .mail a:before{
+		display: inline-block;
+		content: '';
+		background: url("sprite.png") no-repeat -4px -1px;
+		position: relative;
+		width: 31px;
+		height: 31px;
+		top: 7px;
+		margin-right: 18px;
+	}
+
+
+
+
+@media screen and (max-height:800px){
+.text_block {
+		top: 5px;
+		width: 37%;
+	}
+
+	.contacts{
+		margin: 5px auto 0;
+    }
+    .text_block span{
+    	font-size: 2em;
+    }
+    .video__link-white:before{
+    	background: url("play.png") no-repeat center;
+		background-size: 76%;
+		width: 100px;
+		height: 90px;
+		position: absolute;
+		top: -36px;
+		left: 60px;
+    }
+
+}
+@media screen and (max-height:1024px) and (min-height:800px){
+
+	.video__link-white:before{
+	  
+		margin-left: 13px;
+	}
+}
+@media screen and (min-height:768px) and (max-height:790){
+	.text_block {
+		top: 165px;
+	}
+	.contacts{
+		margin: 75px auto 0;
+    }
+
+    .video__link-white:before{
+    	background: url("play.png") no-repeat top center;
+		background-size: 85%;
+		width: 100px;
+		height: 90px;
+		position: absolute;
+		top: -64px;
+		left: 17px;
+    }
+}
+@media screen and (max-width: 1024px) and (max-height: 768px){
+	
+}
 
 @media screen and (max-width: 1024px){
 	body{
-		min-width: 1024px;
+		/*min-width: 1024px;*/
 	}
 	.wrapper{
-		min-width: 1024px;
+		/*min-width: 1024px;
 		max-width: 1024px;
 		width: 100%;
 		min-height: 768px;
 		max-height: 800px;
-		height: 100%;		
+		height: 100%;*/		
 	}
 	.layer{
-		width: 960px;
+		width: 980px;
+	}
+	#menu{
+		width: 67%;
 	}
 	#menu .navigation_item{
 		font-size: 70%;
 		margin-right: 0.563em;
 		letter-spacing: 0.188em;
+	}
+	.text_block {
+		width: 37%;
+		top: 50px;
 	}
 	.text_block span {
 		font-size: 168%;
@@ -940,6 +988,12 @@ left: 1px;
 		bottom: -183px;
 		position: absolute;
 	}
+	.layer-sub-navigation ul{
+		width: 93%;
+	}
+	.layer-sub-navigation li a{
+		margin: 0 9px;
+	}
 	.microphone_small{
 		background-size: 100%;
 		width: 38%;
@@ -949,10 +1003,31 @@ left: 1px;
 		right: 0;
 	}
 	.scroll_down{
-		width: 4%;
+		width: 12%;
+		opacity: 0.6;
+		margin-top: 123px;
+		margin-left: -25px;
 	}
 	.scroll_down:after{
-		bottom: -337px;
+		/*bottom: -337px;*/
+		/*background-size: 90% 90%;*/
+	}
+	.scroll_down:before{
+		/*background-size: 90% 90%;*/
+	}
+	.video__link-white{
+		width: 12%;
+		bottom: 59px;
+	}
+
+	.video__link-white:before {
+		background: url("play.png") no-repeat center;
+		background-size: 85%;
+		width: 100px;
+		height: 90px;
+		position: absolute;
+		top: 19px;
+		left: -96px;
 	}
 	.text_block_emotion span{
 		font-size: 108%;
@@ -977,7 +1052,7 @@ left: 1px;
 	}
 	.text_block_video {
 		width: 40%;
-		left: 479px;
+		/*left: 479px;*/
 	}
 	.text_block_video span{
 		font-size: 109%;
@@ -1022,7 +1097,7 @@ left: 1px;
 		font-size: 110%;
 	}
 	.text_block_sv{
-		left: 479px;
+		left: 488px;
 		top: 329px;
 	}
 	.microphone_big{
@@ -1036,9 +1111,81 @@ left: 1px;
 	.block_contacts{
 		width: 34%;
 	}
+	.contacts{
+		width: 33%;
+		margin: 60px auto 0;
+    }
+    .contacts span{
+		display: block;
+		font-size: 80%;
+		font-family: "OpenSans";
+		padding-left: 30px;
+    }
+    .contacts hr{
+    	color: #fffFFF;
+		width: 103%;
+		opacity: 0.3;
+		position: relative;
+    }
+	.contacts .phone{
+		font-size: 128%;
+		padding-bottom: 2px;
+		padding-top: 18px;
+		padding-left: 30px;
+	}
+	.contacts .mail{
+		font-size: 73%;
+	}
 }
+
+/*@media screen and (max-width: 1300px) {
+	.text_block {
+		top: 16px;
+	}
+	.contacts{
+		margin: 27px auto 0;
+    }
+    .text_block span{
+    	font-size: 2em;
+    }
+    .video__link-white:before{
+    	background: url("play.png") no-repeat center;
+		background-size: 85%;
+		width: 100px;
+		height: 90px;
+		position: absolute;
+		top: -85px;
+		left: 17px;
+    }
+}
+*/
+/*@media screen and (max-width: 1366px) and (min-width: 1280px) {
+	.text_block {
+		top: 5px;
+		width: 37%;
+	}
+
+	.contacts{
+		margin: 5px auto 0;
+    }
+    .text_block span{
+    	font-size: 2em;
+    }
+    .video__link-white:before{
+    	background: url("play.png") no-repeat center;
+		background-size: 76%;
+		width: 100px;
+		height: 90px;
+		position: absolute;
+		top: -85px;
+		left: 17px;
+    }
+}
+
+
+*/
 .block_email a:hover{
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 }
 
 /*popup*/
@@ -1156,3 +1303,26 @@ left: 1px;
 .g-opacity-animated {
     opacity: 0 !important;
 }
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+.fullscreen,
+    .content-a {
+        width:100%;
+        min-height:100%;
+    }
+     .content-a {
+        display:table;
+    }
+    .content-b {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+    }
+section {
+        background:#000;
+    }
